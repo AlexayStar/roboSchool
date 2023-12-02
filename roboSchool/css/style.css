@@ -1,0 +1,283 @@
+@import url('./fonts.css');
+@import url('./normalize.css');
+
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #141024;
+    --acent-color: #d52027;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.page {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.call {
+    font-weight: 600;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.call:hover {
+    color: var(--acent-color);
+}
+
+.button {
+    color: var(--main-color);
+    background-color: var(--acent-color);
+    border-radius: 5px;
+    padding: 25px 54px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #E00F17;
+}
+
+.header {
+    background-color: #141024;
+}
+
+.header__container {
+    max-width: 1750px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    padding: 30px 0;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    margin-right: 40px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__link {
+    font-weight: 400;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.menu__link:hover {
+    color: var(--acent-color);
+}
+
+.promo__wrapper {
+    background-color: var(--secondary-color);
+}
+
+.promo__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 92vh;
+}
+
+.promo__content {
+    z-index: 2;
+    max-width: 516px;
+}
+
+.promo__title {
+    font-weight: 600;
+    font-size: 70px;
+    color: var(--main-color);
+    margin-bottom: 60px;
+}
+
+.promo__text {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 75px;
+}
+
+.promo__img img {
+    position: absolute;
+    right: -12%;
+    bottom: 0;
+}
+
+.about {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.about__text {
+    font-size: 30px;
+    max-width: 891px;
+    margin-bottom: 90px;
+    line-height: 160%;
+}
+
+.about__text-bold {
+    font-weight: 600;
+}
+
+.about__stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+}
+
+.about__num {
+    color: var(--acent-color);
+    font-weight: 600;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.about__descr {
+    color: rgba(20, 16, 36, 0.7);
+}
+
+.get {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    margin-bottom: 120px;
+}
+
+.get__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get__item {
+    max-width: 360px;
+}
+
+.get__title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.get__descr {
+    color: rgba(20, 16, 36, 0.7);
+}
+
+.slider {
+    overflow: visible;
+    margin-bottom: 120px;
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider__img {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.slider__name {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.slider__descr {
+    color: rgba(20, 16, 36, 0.7);
+    margin-bottom: 20px;
+}
+
+.slider__btn {
+    color: var(--acent-color);
+    background: none;
+    border: none;
+    width: 93px;
+    padding: 0 0 3px 0;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.slider__btn:hover {
+    border-bottom: 1px solid var(--acent-color);
+}
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: static;
+    left: var(--swiper-scrollbar-sides-offset, 1%);
+    bottom: var(--swiper-scrollbar-bottom, -80px);
+    top: var(--swiper-scrollbar-top, auto);
+    z-index: 50;
+    height: var(--swiper-scrollbar-size, 5px);
+    max-width: 360px;
+    margin-top: 77px;
+}
+
+.swiper-scrollbar-drag {
+    background: var(--swiper-scrollbar-drag-bg-color, var(--secondary-color));
+}
+
